@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+address,
+i,
+em {
+    font-style: normal;
+}
+
+img,
+video {
+    vertical-align: middle;
+}
