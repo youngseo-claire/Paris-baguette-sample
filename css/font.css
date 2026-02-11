@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "PB";
+    src: url(../font/PBGothicOTFRg.woff2) format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "PB";
+    src: url(../font/PBGothicOTFBd.woff2) format("woff2");
+    font-weight: 700;
+}

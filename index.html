@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>파리바게트</title>
+    <!-- 링크순서 font > common > style -->
+    <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fontello.css">
 
 </head>
 
 <body>
-    <div class="top-banner">banner</div>
     <!-- header -->
     <header>
         <div class="inner">
@@ -18,7 +21,7 @@
                     <span></span><span></span><span></span></a></p>
             <h1 class="logo"><a href="#"><img src="./images/imgi_102_Paris_Baguette_logo_BG.gif" alt="파리바케트 로고"></a>
             </h1>
-            <ul class="left-main-menu">
+            <ul class="left-main-menu main-menu">
                 <li><a href="#">창업안내</a></li>
                 <li><a href="#">파바 매거진</a></li>
                 <li><a href="#">파바 스토리</a></li>
@@ -39,13 +42,13 @@
                 </li>
             </ul>
             <div class="right-menu">
-                <ul class="right-main-menu">
+                <ul class="right-main-menu main-menu">
                     <li><a href="#">회사 소개</a></li>
                     <li><a href="#">매장 정보</a></li>
                     <li><a href="#">온라인 주문</a></li>
                     <li><a href="#">프로모션</a></li>
                 </ul>
-                <p><a href="#"><i>검색버튼</i></a></p>
+                <p><a href="#"><i class="icon-search2"></i></a></p>
             </div>
         </div>
 
@@ -98,7 +101,7 @@
             <li><a href="#"><img src="./images/main-slider-1.jpg" alt=""></a></li>
             <li><a href="#"><img src="./images/main-slider-2.jpg" alt=""></a></li>
             <li><a href="#"><img src="./images/main-slider-3.jpg" alt=""></a></li>
-            <li><a href="#"><img src="./images/main-slider-4.jpg" alt=""></a></li>
+            <!-- <li><a href="#"><img src="./images/main-slider-4.jpg" alt=""></a></li> -->
             <li><a href="#"><img src="./images/main-slider-5.jpg" alt=""></a></li>
             <li><a href="#"><img src="./images/main-slider-6.jpg" alt=""></a></li>
             <li><a href="#"><img src="./images/main-slider-7.jpg" alt=""></a></li>
@@ -109,9 +112,9 @@
         <section class="promotion">
             <div class="inner">
                 <h2 class="section-title">PROMOTION</h2>
-                <div class="promotion-list-wrap">
+                <div class="promotion-list-wrap wrap">
                     <!-- ul.promotion-list>li*17>(div.img-box>a[href="#"]>img[src="./images/promotion-img-$$.jpg"])+div.text-box -->
-                    <ul class="promotion-list">
+                    <ul class="promotion-list list">
                         <li>
                             <div class="img-box"><a href="#"><img src="./images/promotion-img-01.jpg" alt=""></a></div>
                             <div class="text-box">
@@ -236,15 +239,12 @@
                             <div class="img-box"><a href="#"><img src="./images/promotion-img-16.jpg" alt=""></a></div>
                             <div class="text-box">
                                 <h3>💙파란라벨: 고단백 서리태 카스테라 출시!🫘🫛</h3>
-
                             </div>
-                            <p class="more-btn"><a href="#">SHOW MORE</a></p>
                         </li>
                         <li>
                             <div class="img-box"><a href="#"><img src="./images/promotion-img-17.jpg" alt=""></a></div>
                             <div class="text-box">
                                 <h3>건강빵의 새로운 기준, 파란라벨💙</h3>
-
                             </div>
                         </li>
                     </ul>
@@ -255,8 +255,8 @@
         <section class="pb-story-wrap">
             <div class="inner">
                 <h2 class="section-title">PB STORY</h2>
-                <div class="pb-story-list-wrap">
-                    <ul class="pb-story-list">
+                <div class="pb-story-list-wrap wrap">
+                    <ul class="pb-story-list list">
                         <!-- li*4>(div.img-box>a[href="#"]>img[src="./images/pb-story-img-$.jpg"])+div.text-box -->
                         <li>
                             <div class="img-box"><a href="#"><img src="./images/pb-story-img-1.jpg" alt=""></a></div>
@@ -357,13 +357,13 @@
     <div class="quick-menu-wrap">
         <!-- p.top-btn>a[href="#"]>i+span
         ul.quick-menu>li*5>a[href="#"]>i+span -->
-        <p class="top-btn"><a href="#"><i></i><span>TOP</span></a></p>
+        <p class="top-btn"><a href="#"><i class="icon-up-open"></i><span>TOP</span></a></p>
         <ul class="quick-menu">
-            <li><a href="#"><i></i><span>매장정보</span></a></li>
-            <li><a href="#"><i></i><span>주문정보</span></a></li>
-            <li><a href="#"><i></i><span>창업안내</span></a></li>
-            <li><a href="#"><i></i><span>알바지원</span></a></li>
-            <li><a href="#"><i></i><span>파바앱</span></a></li>
+            <li><a href="#"><i class="icon-map"></i><span>매장정보</span></a></li>
+            <li><a href="#"><i><img src="./images/imgi_79_250408_alba_icon.png" alt=""></i><span>주문정보</span></a></li>
+            <li><a href="#"><i><img src="./images/imgi_77_02_icon_24x24.gif" alt=""></i><span>창업안내</span></a></li>
+            <li><a href="#"><i><img src="./images/imgi_79_250408_alba_icon.png" alt=""></i><span>알바지원</span></a></li>
+            <li><a href="#"><i><img src="./images/imgi_107_mobile-app-2.svg" alt=""></i><span>파바앱</span></a></li>
         </ul>
 
 

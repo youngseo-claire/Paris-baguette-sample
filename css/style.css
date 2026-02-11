@@ -1,0 +1,432 @@
+:root {
+    --mainText: #111;
+    --subText: #4a4a4a;
+    --linkText: #888;
+    --mainColor: #023586;
+}
+
+body {
+    color: var(--mainText);
+    overflow-x: hidden;
+}
+
+/* 제거하기 (모바일용에서만 보여지는 것들) */
+.ham-btn,
+.mobile-menu-wrap {
+    display: none;
+}
+
+/* 이너 지정 */
+.inner {
+    max-width: 1470px;
+    padding: 0 1.5em;
+    margin: 0 auto;
+    background-color: rgba(255, 0, 0, 0.2);
+    /* 메뉴의 포지션들 */
+    position: relative;
+    /* overflow: hidden; */
+}
+
+/* header */
+header {
+    background: var(--mainColor);
+}
+
+.logo {
+    /* 로고가 가운데 있는 경우는 이렇게만 준다 */
+    text-align: center;
+    line-height: 90px;
+}
+
+.left-main-menu {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+}
+
+.main-menu>li>a {
+    display: block;
+    color: #fff;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    line-height: 90px;
+}
+
+.main-menu>li>a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.main-menu>li:hover>a::after {
+    width: 100%;
+}
+
+
+.main-menu .sub-wrap {
+    position: absolute;
+    background: #fff;
+    width: 368px;
+    padding: 24px;
+    line-height: 3;
+    font-size: 14px;
+    color: var(--linkText);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.main-menu .sub-menu {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.main-menu .sub-menu>li {
+    width: 50%;
+}
+
+.main-menu>li:hover .sub-wrap {
+    display: block;
+}
+
+.right-menu {
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 30px;
+}
+
+.right-menu .right-main-menu {
+    display: flex;
+}
+
+.right-menu .icon-search2 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.right-menu p {
+    line-height: 90px;
+}
+
+/* main-slider-wrap */
+.main-slider-wrap {
+    overflow: hidden;
+}
+
+.main-slider-wrap .main-slider-list {
+    display: flex;
+    /* width: calc(100% * 6 / 3); */
+}
+
+.main-slider-list>li {
+    /* flex: grow shrink 너비(부모의 요소기준) */
+    flex: 0 0 calc(100% / 3);
+}
+
+/* main */
+section {
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.section-title {
+    font-family: "PB", sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.more-btn {
+    position: absolute;
+    right: 24px;
+    top: 0;
+    /* text-decoration: underline; */
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 2px solid;
+}
+
+.wrap {}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+}
+
+.list>li .img-box::after {}
+
+.list>li .text-box h3 {
+    font-family: "PB", sans-serif;
+}
+
+.promotion-list-wrap {}
+
+.promotion-list {}
+
+.promotion-list>li {
+    /* 공백이 3개 24*3=72 > 72/4=18 */
+    flex: 0 0 calc(100% / 4 - 18px);
+}
+
+.promotion-list>li .img-box {}
+
+.promotion-list>li .text-box {
+    padding: 1.5em 0;
+}
+
+.promotion-list>li .text-box h3 {}
+
+.promotion-list>li .text-box p {
+    font-size: 12px;
+    color: var(--linkText);
+    margin-top: 10px;
+
+}
+
+.pb-story-wrap {}
+
+.pb-story-list {
+    flex-wrap: wrap;
+}
+
+.pb-story-list>li {
+    flex: 0 0 calc(100% / 2 - 24px);
+    display: flex;
+    gap: 1.5em;
+}
+
+.pb-story-list>li>div {
+    flex: 1;
+}
+
+.pb-story-list>li .img-box {}
+
+.pb-story-list>li .text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.pb-story-list>li .text-box .blue-text {
+    font-size: 12px;
+    color: var(--mainColor);
+
+}
+
+.pb-story-list>li .text-box h3 {
+    font-size: 1.5em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.pb-story-list>li .text-box p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.pb-story-list>li .text-box .date {
+    font-size: 11px;
+}
+
+
+
+/* footer */
+footer {
+    background: #454a56;
+    color: #fff;
+}
+
+footer .inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .inner>div {
+    flex: 1;
+}
+
+footer h3 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.mark-wrap ul {
+    display: flex;
+    gap: 10px;
+}
+
+.mark-wrap ul>li img {
+    height: 34px;
+}
+
+.sns-list {
+    display: flex;
+    gap: 12px;
+}
+
+.sns-list>li>a {
+    display: block;
+    background: #fff;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sns-list>li>a img {
+    width: 60%;
+}
+
+.sns-list>li:first-child>a img {
+    width: 35%;
+}
+
+.sns-list>li:last-child>a img {
+    width: 65%;
+}
+
+/* .quick-menu */
+
+.quick-menu-wrap {
+    position: fixed;
+    background: #111;
+    right: 24px;
+    bottom: 30px;
+    padding: 12px;
+    color: #ddd;
+    font-size: 11px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.quick-menu>li {
+    padding: 10px 0;
+}
+
+.quick-menu>li i {
+    display: block;
+    font-size: 24px;
+}
+
+.quick-menu>li i img {
+    width: 24px;
+}
+
+/* 반응형 */
+@media screen and (max-width:1280px) {
+
+    .left-main-menu,
+    .right-menu .right-main-menu {
+        display: none;
+    }
+
+    .ham-btn {
+        display: block;
+        position: absolute;
+        left: 2em;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 14px;
+    }
+
+    .ham-btn>a {
+        /* display: block; */
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .ham-btn>a span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    body {
+        font-size: 12px;
+    }
+
+    /* main-slider  2개*/
+
+    .main-slider-list>li {
+        flex: 0 0 50%
+    }
+
+    /* promotion 2개 */
+    /* 사이사이 간격이 지금은 18임
+    18px 4개일때 간격 *3 / 4  2개일때 간격 *1 /2 => 9px */
+    .promotion-list>li {
+        flex: 0 0 calc(100% / 2 - 9px)
+    }
+
+    .pb-story-list>li {
+        flex: 0 0 100%;
+    }
+
+    /* footer 2단으로 */
+
+    footer .inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4em;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .promotion-list>li {
+        flex: 0 0 100%;
+    }
+
+    footer .inner {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .quick-menu-wrap {
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        padding: 1em;
+    }
+
+    .quick-menu-wrap .top-btn {
+        display: none;
+    }
+
+    .quick-menu {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    .quick-menu>li {
+        padding: 0;
+    }
+
+}
