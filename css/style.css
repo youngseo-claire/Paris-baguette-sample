@@ -147,6 +147,7 @@ section {
     margin-bottom: 1.5em;
 }
 
+
 .more-btn {
     position: absolute;
     right: 24px;
@@ -171,22 +172,19 @@ section {
     font-family: "PB", sans-serif;
 }
 
-.promotion-list-wrap {}
-
-.promotion-list {}
+.promotion-list {
+    overflow: hidden;
+}
 
 .promotion-list>li {
     /* 공백이 3개 24*3=72 > 72/4=18 */
     flex: 0 0 calc(100% / 4 - 18px);
 }
 
-.promotion-list>li .img-box {}
 
 .promotion-list>li .text-box {
     padding: 1.5em 0;
 }
-
-.promotion-list>li .text-box h3 {}
 
 .promotion-list>li .text-box p {
     font-size: 12px;
