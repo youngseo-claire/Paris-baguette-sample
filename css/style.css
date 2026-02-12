@@ -363,6 +363,22 @@ footer h3 {
         background: #fff;
     }
 
+    /* 모바일 메뉴 */
+    .mobile-menu-wrap {
+        display: block;
+        position: fixed;
+        background: #fff;
+        width: 280px;
+        top: 0;
+        height: 100vh;
+        z-index: 1000;
+    }
+
+    .mobile-menu-wrap .close-btn {}
+
+    .mobile-menu-list {}
+
+    .mobile-menu-list .sub-wrap {}
 }
 
 @media screen and (max-width:768px) {
