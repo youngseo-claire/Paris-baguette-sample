@@ -374,9 +374,27 @@ footer h3 {
         z-index: 1000;
     }
 
-    .mobile-menu-wrap .close-btn {}
+    .mobile-menu-wrap .close-btn {
+        padding: 24px 20px;
+        border-bottom: 1px solid #ebebeb;
+    }
 
-    .mobile-menu-list {}
+    .mobile-menu-wrap .close-btn span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #212121;
+    }
+
+    .mobile-menu-wrap .close-btn span:first-child {
+        transform: rotate(45deg) translate(2px, 1px);
+        /* background-color: red; */
+
+    }
+
+    .mobile-menu-wrap .close-btn span:last-child {
+        transform: rotate(-45deg);
+    }
 
     .mobile-menu-list .sub-wrap {}
 }
